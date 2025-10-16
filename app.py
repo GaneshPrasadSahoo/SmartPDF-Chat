@@ -9,6 +9,9 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 from langchain.llms import Ollama
 import requests
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.llms import Ollama
 
 # Load environment variables
 load_dotenv()
